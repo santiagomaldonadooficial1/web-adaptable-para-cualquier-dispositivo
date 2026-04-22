@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#navegador a {
+    text-decoration: none;
+    color: rgb(32, 29, 29)
+}
+
+#navegador ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 24px;
+    gap: 40px;
+    margin:0px 0px 0px 0px;
+    position: fixed;
+    top: 0px;
+    background-color: #fff;
+    z-index: 9;
+    width: 100%;
+    height: 50px;
+}
+
+#navegador a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#navegador a:visited {
+    color: rgb(32, 29, 29);
+}
+
+#info {
+position: fixed;
+left: 98%;
+z-index: 1000;
+}
+
+#whatsapp {
+    position: fixed;
+    top: 50%;
+    left:97%;
+    font-size: 22px;
+    z-index: 1000;
+}
+
+#whatsapp:hover {
+    font-size: 24px;
+}
+
+
+
+header {
+    display: block;
+    padding: 40px;
+    background-color: #0072bb;
+    height: 400px;;
+    color: #fff
+}
+
+header h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+
+header p {
+    font-size: 25px;
+    position: absolute;                                                                                                                                                                   
+    top: 45%;
+    left: 5%;
+}
+
+main {
+    display:block;
+    padding: 20px;
+    width: 700px;
+}
+
+main p {
+    font-size: 18px;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+#menu h2 {
+    font-size: 24px;
+    position: relative;
+    left: 80%;
+    width:100%;
+    margin:0px;
+    font-weight: 1100;
+}
+
+#entrantes {
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+#entrantes h3 {
+    font-size: 22px;
+}
+
+#entrantes p {
+    font-size: 16px;
+}
+
+#platos-principales {
+    grid-column: 2/3;
+    padding: 20px;
+}
+
+#platos-principales h3 {
+    font-size: 22px;
+}
+
+#platos-principales p {
+    font-size: 16px;
+}
+
+#postres {
+    grid-column: 1/2;
+    padding: 20px;
+}
+
+#postres h3 {
+    font-size: 22px;
+}
+
+#postres p {
+    font-size: 16px;
+}
+
+#nosotros {
+    padding: 20px;
+    width: 600px;
+    position: relative;
+    left: 50%;
+}
+
+#estamos {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    padding: 20px;
+}
+
+#derechos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#derechos p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#derechos a {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    
+#navegador ul {
+    font-size: 12px;
+    justify-content: left;
+    gap: 20px
+}
+
+header h1 {
+    font-size: 22px;
+    margin: 0%;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main h2 {
+    font-size: 20px;
+}
+
+main p {
+    width: 250px;
+    font-size: 15px;
+}
+
+#menu {
+    display: block;
+}
+
+#entrantes
+#platos-principales
+#postres {
+    grid-column: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#menu h3 {
+    font-size: 18px;
+}
+
+#menu p {
+    font-size: 15px;
+}
+
+#menu h2 {
+    left: 3%;
+}
+
+#nosotros {
+    left: 1%;
+}
+
+#nosotros p {
+    width: 250px;
+}
+
+#estamos {
+    display: block;
+}
+
+#derechos {
+    display: block;
+}
+
+}
